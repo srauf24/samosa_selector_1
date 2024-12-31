@@ -6,6 +6,7 @@ Here’s a polished and engaging README for your **Samosa Selector** project:
 A fun and interactive app to count and upgrade your samosa stash!  
 
 [**Live Demo**](https://samosa-selector-1.vercel.app/)
+<img width="1512" alt="image" src="https://github.com/user-attachments/assets/db8390a6-58b5-47ae-9601-40dfb41247a9" />
 
 ---
 
