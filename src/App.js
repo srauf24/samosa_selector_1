@@ -9,19 +9,19 @@ function App() {
     };
     const buyDoubleStuffed = () => {
     if (count >= 10) {
-        setCount((prevCount) => (prevCount - 10) * 2);
+        setCount((prevCount) => (prevCount *2) -10);
     }
 };
 
 const buyPartyPack = () => {
     if (count >= 100) {
-        setCount((prevCount) => (prevCount - 100) * 100);
+        setCount((prevCount) => (prevCount *100) - 100);
     }
 };
 
 const buyFullFeastPack = () => {
     if (count >= 1000) {
-        setCount((prevCount) => (prevCount - 1000) * 1000);
+        setCount((prevCount) => (prevCount * 1000) - 1000);
     }
 };
 
