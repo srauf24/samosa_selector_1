@@ -7,20 +7,36 @@ function App() {
     const handleSingleClick = () => {
         setCount(count + 1);
     };
+    const handleDoubleClick = () => {
+        if (count >= 10)
+        {
+            setCount(count + 10);
+        }
+    };
 
   return (
     <div className="App">
-        <header className="App-header">
+        <header className="header">
             <h1> Samosa Selector</h1>
             <img src={samosaImage}
-                 alt="Samosa"
+                 className="samosa"
                  style={{width: '200px', marginBottom: '20px'}}
                  onClick={handleSingleClick}
-
             />
-            <p>Count: {count}</p>
+            <h1> Count: {count}</h1>
 
         </header>
+        <div className= "Container">
+            <div className="DoubleStuffed">
+                <h3> Double Stuffed</h3>
+                <p> Double stuffed ground beef</p>
+                <button onClick={handleDoubleClick}>
+                    10 Samosas
+                </button>
+            </div>
+
+
+        </div>
     </div>
   );
 }

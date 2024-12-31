@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #e6dfdf; /* Change this to your desired background color */
 }
 
 .App-logo {
@@ -28,7 +29,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #1b1515;
   padding-top: 20px; /* Adjust this value to move the content further up */
 }
 
@@ -43,4 +44,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+.samosa {
+    height: 15em;
+    padding: 1.5em;
+    margin: 0 auto;
+    text-align: center;
 }
