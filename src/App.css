@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #e6dfdf; /* Change this to your desired background color */
+  background-color: #cdabab; /* Change this to your desired background color */
 }
 
 .App-logo {
@@ -10,7 +10,33 @@
 .App img {
   transition: transform 0.2s; /* Smooth transition */
 }
+.Container{
+  margin-top: 50px;
+  display: flex;
+}
+.Upgrade{
+  border: 1px solid rgba(153, 153, 153, 0.497);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.Button{
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+  cursor: pointer;
+  margin-top: 10px;
 
+
+}
 .App img:hover {
   transform: scale(1.2); /* Scale the image to 120% */
 }
@@ -29,25 +55,13 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #1b1515;
   padding-top: 20px; /* Adjust this value to move the content further up */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .samosa {
     height: 15em;
     padding: 1.5em;
     margin: 0 auto;
     text-align: center;
+    cursor:pointer;
 }

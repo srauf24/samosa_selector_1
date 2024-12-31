@@ -25,18 +25,19 @@ function App() {
             />
             <h1> Count: {count}</h1>
 
-        </header>
+
         <div className= "Container">
-            <div className="DoubleStuffed">
+            <div className="Upgrade">
                 <h3> Double Stuffed</h3>
                 <p> Double stuffed ground beef</p>
-                <button onClick={handleDoubleClick}>
+                <button className = "Button" onClick={handleDoubleClick}>
                     10 Samosas
                 </button>
             </div>
 
 
         </div>
+        </header>
     </div>
   );
 }
