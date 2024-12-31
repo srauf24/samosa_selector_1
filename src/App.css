@@ -6,6 +6,13 @@
   height: 40vmin;
   pointer-events: none;
 }
+.App img {
+  transition: transform 0.2s; /* Smooth transition */
+}
+
+.App img:hover {
+  transform: scale(1.2); /* Scale the image to 120% */
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
