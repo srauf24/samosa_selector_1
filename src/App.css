@@ -1,72 +1,133 @@
+/* Base Styles */
 .App {
   text-align: center;
-  background-color: #cdabab; /* Change this to your desired background color */
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-.App img {
-  transition: transform 0.2s; /* Smooth transition */
-}
-.Container{
-  margin-top: 50px;
-  display: flex;
-}
-.Upgrade{
-  border: 1px solid rgba(153, 153, 153, 0.497);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.Button{
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding-top: .3em;
-  padding-bottom: .3em;
-  padding-left: 1em;
-  padding-right: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  color: rgba(255, 255, 255, 0.87);
-  cursor: pointer;
-  margin-top: 10px;
-
-
-}
-.Samosa :hover{
-    transform: scale(1.1); /* Scale the image to 120% */
-
-}
-.Samosa:active{
-    transform: scale(.95); /* Scale the image to 120% */
-
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #1a202c; /* Dark slate background for a modern look */
+  font-family: 'Roboto', Arial, sans-serif; /* Modern and clean font */
+  color: #f7fafc; /* Light text for good contrast */
+  min-height: 100vh; /* Full-page height */
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  padding-top: 20px; /* Adjust this value to move the content further up */
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-.samosa {
-    height: 15em;
-    padding: 1.5em;
-    margin: 0 auto;
-    text-align: center;
-    cursor:pointer;
+/* Header */
+.App-header {
+  background-color: #2d3748; /* Slightly lighter dark background for the header */
+  width: 100%;
+  padding: 30px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for header depth */
+  margin-bottom: 20px;
+}
+
+.App-header h1 {
+  font-size: 2.5rem; /* Larger heading */
+  font-weight: bold;
+  color: #f7fafc;
+  margin-bottom: 20px;
+}
+
+/* Samosa Image */
+.Samosa {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-radius: 50%; /* Circular image for a modern touch */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.Samosa:hover {
+  transform: scale(1.1); /* Gentle zoom on hover */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.Samosa:active {
+  transform: scale(0.95);
+}
+
+/* Count Display */
+.App-header h1:nth-child(3) {
+  font-size: 2rem;
+  margin-top: 10px;
+  color: #63b3ed; /* Bright blue to highlight the count */
+}
+
+/* Upgrade Container */
+.Container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Upgrade Cards */
+.Upgrade {
+  background-color: #edf2f7; /* Light grey for card background */
+  color: #2d3748; /* Dark text for readability */
+  border: 1px solid #cbd5e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Upgrade:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Upgrade h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #1a202c; /* Stronger text for headings */
+}
+
+.Upgrade p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: #4a5568;
+}
+
+/* Buttons */
+.Button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-weight: 600;
+  background-color: #4299e1; /* Bright blue for buttons */
+  color: #fff; /* White text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.Button:hover {
+  background-color: #3182ce; /* Darker blue on hover */
+  transform: scale(1.05); /* Subtle enlargement */
+}
+
+.Button:active {
+  background-color: #2b6cb0; /* Even darker blue on click */
+  transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Upgrade {
+    width: 90%; /* Full width for smaller screens */
+  }
+
+  .Samosa {
+    width: 80%; /* Reduce samosa image size for smaller screens */
+  }
 }
