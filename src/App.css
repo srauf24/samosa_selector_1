@@ -37,8 +37,13 @@
 
 
 }
-.App img:hover {
-  transform: scale(1.2); /* Scale the image to 120% */
+.Samosa :hover{
+    transform: scale(1.1); /* Scale the image to 120% */
+
+}
+.Samosa:active{
+    transform: scale(.95); /* Scale the image to 120% */
+
 }
 
 @media (prefers-reduced-motion: no-preference) {

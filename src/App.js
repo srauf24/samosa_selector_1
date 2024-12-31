@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import samosaImage from './samosa.webp';
+import samosaImage from './samosa.jpeg';
 
 function App() {
     const [count, setCount] = useState(0);
@@ -30,10 +30,10 @@ const buyFullFeastPack = () => {
         <header className="header">
             <h1> Samosa Selector</h1>
             <img src={samosaImage}
-                 className="samosa"
+                 className="Samosa"
                  style={{width: '200px', marginBottom: '20px'}}
                  onClick={handleSingleClick}
-            />
+             alt={"Samosa"}/>
             <h1> Count: {count}</h1>
 
 
