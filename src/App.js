@@ -8,26 +8,22 @@ function App() {
         setCount(count + 1);
     };
     const buyDoubleStuffed = () => {
-        if (count >= 10)
-        {
-            setCount((prevCount) => (prevCount * 2) - 10);
+    if (count >= 10) {
+        setCount((prevCount) => (prevCount - 10) * 2);
+    }
+};
 
-        }
-    };
-    const buyPartyPack = () => {
-        if (count >= 100)
-        {
-                    setCount((prevCount) => (prevCount * 100) - 100);
+const buyPartyPack = () => {
+    if (count >= 100) {
+        setCount((prevCount) => (prevCount - 100) * 100);
+    }
+};
 
-        }
-    };
-    const buyFullFeastPack = () => {
-        if (count >= 1000)
-        {
-                    setCount((prevCount) => (prevCount * 1000) - 1000);
-
-        }
-    };
+const buyFullFeastPack = () => {
+    if (count >= 1000) {
+        setCount((prevCount) => (prevCount - 1000) * 1000);
+    }
+};
 
   return (
     <div className="App">
